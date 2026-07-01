@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Skills</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#07152d;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 40px;
+    background:#07152d;
+}
+
+.logo{
+    color:#fff;
+    font-size:30px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#2d7eff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#2d7eff;
+}
+
+/*======================
+        SKILLS
+=======================*/
+
+.skills{
+    width:100%;
+    padding:80px 8%;
+    background:#07152d;
+}
+
+.skills-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.skills-title h1{
+    color:#fff;
+    font-size:42px;
+}
+
+.line{
+    width:80px;
+    height:4px;
+    background:#2d7eff;
+    margin:15px auto;
+    border-radius:20px;
+}
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+.skill-card{
+    background:#102542;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:15px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(45,126,255,.35);
+    border:2px solid #2d7eff;
+}
+
+.skill-icon{
+    width:90px;
+    height:90px;
+    margin:auto;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:50px;
+    color:#2d7eff;
+    margin-bottom:20px;
+}
+
+.skill-card h2{
+    color:#fff;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.skill-card p{
+    color:#d5d5d5;
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.skills-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.skills-container{
+    grid-template-columns:1fr;
+}
+
+.skills-title h1{
+    font-size:34px;
+}
+
+.skill-card{
+    padding:30px 20px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+<header>
+    <div class="logo">
+        Dewmini <span>Shalika</span>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="Skill.html" class="active">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="skills" class="skills">
+
+<div class="skills-title">
+<h1>My Skills</h1>
+<div class="line"></div>
+</div>
+
+<div class="skills-container">
+
+<div class="skill-card">
+
+<div class="skill-icon">
+<i class="fa-brands fa-html5"></i>
+</div>
+
+<h2>HTML 5</h2>
+
+<p>
+Highly proficient in creating semantic, responsive, and accessible web pages using modern HTML5 standards.
+</p>
+
+</div>
+
+
+<div class="skill-card">
+
+<div class="skill-icon">
+<i class="fa-brands fa-css3-alt"></i>
+</div>
+
+<h2>CSS 3</h2>
+
+<p>
+Highly proficient in responsive layouts, Flexbox, Grid, animations, and modern user interface design.
+</p>
+
+</div>
+
+
+<div class="skill-card">
+
+<div class="skill-icon">
+<i class="fa-brands fa-js"></i>
+</div>
+
+<h2>JavaScript</h2>
+
+<p>
+Intermediate knowledge of JavaScript. I can build interactive web pages and I am continuously improving through projects.
+</p>
+
+</div>
+
+
+<div class="skill-card">
+
+<div class="skill-icon">
+<i class="fa-brands fa-java"></i>
+</div>
+
+<h2>Java</h2>
+
+<p>
+Basic to intermediate knowledge of Java and Object-Oriented Programming (OOP). I enjoy learning and improving my programming skills.
+</p>
+
+</div>
+
+
+<div class="skill-card">
+
+<div class="skill-icon">
+<i class="fa-solid fa-code"></i>
+</div>
+
+<h2>C#</h2>
+
+<p>
+Basic knowledge of C#. Currently learning application development and object-oriented programming while expanding my skills.
+</p>
+
+</div>
+
+
+<div class="skill-card">
+
+<div class="skill-icon">
+<i class="fa-solid fa-database"></i>
+</div>
+
+<h2>MySQL</h2>
+
+<p>
+Highly proficient in SQL queries, CRUD operations, relational databases, and database management for web applications.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
